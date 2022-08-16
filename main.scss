@@ -1,0 +1,78 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 3vw;
+    background-color: #343434;
+    color: white;
+}
+
+.calculator {
+    padding: 5%;
+    min-height: 100vh;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    gap: 1rem 1rem;
+
+    grid-template-areas:
+      "screens screens screens screens"
+      "C . DEL mult"
+      "one two three div"
+      "four five six addi"
+      "seven eight nine subt"
+      "dots zeros . equals";
+
+    #screen {grid-area: screens;}
+    #C { grid-area: C; }
+    #DEL { grid-area: DEL; }
+    #mult { grid-area: mult; }
+    #div { grid-area: div; }
+    #addi { grid-area: addi; }
+    #subt { grid-area: subt; }
+    #equals { grid-area: equals; }
+    #one { grid-area: one; }
+    #two { grid-area: two; }
+    #three { grid-area: three; }
+    #four { grid-area: four; }
+    #five { grid-area: five; }
+    #six { grid-area: six; }
+    #seven { grid-area: seven; }
+    #eight { grid-area: eight; }
+    #nine { grid-area: nine; }
+    #zeros { grid-area: zeros; }
+    #dot { grid-area: dots; }
+
+    
+    
+    &__number {
+        aspect-ratio: 1;
+        border-radius: 100%;
+        background-color: #555555;
+        cursor: pointer;
+    }
+
+    &__operator {
+        aspect-ratio: 1;
+        border-radius: 100%;
+        background-color: #00a560;
+        cursor: pointer;
+
+        &--CDEL {
+            aspect-ratio: 1;
+            border-radius: 100%;
+            background-color: #7c7c7c;
+            cursor: pointer;
+        }
+    }
+
+    button:hover {
+        background-color: #2f8aad;
+        transition: all 150ms ease-in-out;
+    }
+    
+}
+
