@@ -88,13 +88,38 @@
   background-color: #00a560;
   cursor: pointer;
 }
-.calculator__operator--CDEL {
+.calculator__CDEL {
   aspect-ratio: 1;
   border-radius: 100%;
   background-color: #7c7c7c;
   cursor: pointer;
 }
+.calculator button {
+  font-size: 1rem;
+}
 .calculator button:hover {
   background-color: #2f8aad;
   transition: all 150ms ease-in-out;
+}
+.calculator__screen {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: space-evenly;
+  border: 1px solid red;
+}
+.calculator__output-previous {
+  height: 30%;
+  font-size: 1rem;
+  color: #00a560;
+  border: 1px solid green;
+}
+.calculator__output-current {
+  height: 70%;
+  width: 100%;
+  overflow-x: scroll;
+  font-size: 3rem;
+  color: white;
+  border: 1px solid yellow;
 }

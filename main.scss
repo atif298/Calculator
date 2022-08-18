@@ -46,8 +46,8 @@
     #zeros { grid-area: zeros; }
     #dot { grid-area: dots; }
 
-    
-    
+
+
     &__number {
         aspect-ratio: 1;
         border-radius: 100%;
@@ -60,19 +60,52 @@
         border-radius: 100%;
         background-color: #00a560;
         cursor: pointer;
+    }
 
-        &--CDEL {
-            aspect-ratio: 1;
-            border-radius: 100%;
-            background-color: #7c7c7c;
-            cursor: pointer;
+    &__CDEL {
+        aspect-ratio: 1;
+        border-radius: 100%;
+        background-color: #7c7c7c;
+        cursor: pointer;
+    }
+    
+
+    button {
+        font-size: 1rem;
+
+        &:hover {
+            background-color: #2f8aad;
+            transition: all 150ms ease-in-out;
         }
     }
 
-    button:hover {
-        background-color: #2f8aad;
-        transition: all 150ms ease-in-out;
+    &__screen {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: space-evenly;
+        border: 1px solid red;
     }
-    
+
+    &__output-previous {
+        height: 30%;
+        font-size: 1rem;
+        color: #00a560;
+        border: 1px solid green;
+    }
+
+    &__output-current {
+        height: 70%;
+        width: 100%;
+        overflow-x: scroll;
+        font-size: 3rem;
+        color: white;
+        border: 1px solid yellow;
+
+    }
+
+
+
 }
 
