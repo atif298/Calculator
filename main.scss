@@ -91,6 +91,7 @@
     &__output-previous {
         height: 30%;
         font-size: 1rem;
+        text-align: end;
         color: #00a560;
         border: 1px solid green;
     }
@@ -98,8 +99,9 @@
     &__output-current {
         height: 70%;
         width: 100%;
-        overflow-x: scroll;
+        text-align: end;
         font-size: 3rem;
+        overflow-x: scroll;
         color: white;
         border: 1px solid yellow;
 

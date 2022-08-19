@@ -118,6 +118,7 @@
 .calculator__output-current {
   height: 70%;
   width: 100%;
+  text-align: end;
   overflow-x: scroll;
   font-size: 3rem;
   color: white;
