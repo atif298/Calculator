@@ -18,8 +18,8 @@ const currentScreen = document.querySelector(".calculator__output-current")
 //implementing click trigger for each item in the array of numbers that has been imported from line 4
 numbers.forEach (number => {
     //every click will activate inputNumber function
-    number.addEventListener("click", inputNumber)
-});
+    number.addEventListener("click", inputNumber);
+})
 
 
 

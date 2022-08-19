@@ -112,6 +112,7 @@
 .calculator__output-previous {
   height: 30%;
   font-size: 1rem;
+  text-align: end;
   color: #00a560;
   border: 1px solid green;
 }
@@ -119,8 +120,8 @@
   height: 70%;
   width: 100%;
   text-align: end;
-  overflow-x: scroll;
   font-size: 3rem;
+  overflow-x: scroll;
   color: white;
   border: 1px solid yellow;
 }
