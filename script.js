@@ -93,4 +93,44 @@ function computeOperator () {
 }
 
 
+//EQUALS
+//implementing click trigger for when the equals operator is clicked. When clicked it will run the computeAnswer function
+equals.addEventListener("click", computeAnswer);
+
+function computeAnswer () {
+    //if inserted operator is equal to nothing then the if statement will return nothing
+    if (currentScreen.innerHTML === "") {
+        return;
+    }
+    //we are now turning the string values of the current and previous screens into integers
+    let a = Number(currentScreen.innerHTML);
+    let b = Number(previousScreen.innerHTML);
+    //let has been used to declare the variable answer to be different depending on the operator
+    let answer;
+    //it will now identify which operator it was and compute the following formula
+    switch (computeOperator) {
+        case "multiply":
+            //in this case it will multiply the previous number to the current as the previous number was first entered into the calculator
+            answer = b * a ;
+            break;
+            //divide
+        case "divide":
+            answer = b / a ;
+            break;
+            //add
+        case "add":
+            answer = b + a ;
+            break;
+            //subtract
+        case "subtract":
+            answer = b - a ;
+            break;
+            //if for some reason no operator was selected even after the if statement it will just return nothing.
+        default:
+            return;
+    }
+    //this will return the calculated result back as a string so that another operator can be used on it without causing an interferance as inputs are given as strings 
+    // return currentScreen.innerHTML = answer;
+    return currentScreen.innerHTML = (answer);
+}
 
