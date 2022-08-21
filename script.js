@@ -134,3 +134,14 @@ function computeAnswer () {
     return currentScreen.innerHTML = (answer);
 }
 
+
+//CLEAR
+//implementing click trigger for when clear has been clicked to run the function allClear
+clear.addEventListener("click", allClear);
+
+function allClear () {
+    //this will remove any HTML textinside currentScreen
+    currentScreen.innerHTML = "";
+    //this will remove any HTML textinside previousScreen
+    previousScreen.innerHTML = "";
+}
