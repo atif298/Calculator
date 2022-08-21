@@ -88,6 +88,12 @@
   background-color: #00a560;
   cursor: pointer;
 }
+.calculator__equals {
+  aspect-ratio: 1;
+  border-radius: 100%;
+  background-color: #00a560;
+  cursor: pointer;
+}
 .calculator__CDEL {
   aspect-ratio: 1;
   border-radius: 100%;
