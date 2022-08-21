@@ -145,3 +145,18 @@ function allClear () {
     //this will remove any HTML textinside previousScreen
     previousScreen.innerHTML = "";
 }
+
+
+//DELETE
+////implementing click trigger for when deleteNumber has been clicked to run the function backspace
+deleteNumber.addEventListener('click', backspace);
+function backspace() {
+    //this ([...]) is creating an array with the same values of text inside currentScreen but in the variable currentNumber
+    let currentNumber = [...currentScreen.innerHTML];
+    //removes last number in array
+    currentNumber.pop();
+    //this (.join) will convert the array into a string and assign it to the currentNumber variable
+    currentNumber = currentNumber.join("");
+    //this will mean currentNumber string is now assigned and placed into the text in the HTML of currentScreen
+    currentScreen.innerHTML = currentNumber;
+}
