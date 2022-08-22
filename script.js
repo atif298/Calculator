@@ -57,6 +57,10 @@ function inputOperator(event) {
     currentScreen.innerHTML = ("");
     //insertedOperator is the variable for the text that is inside the HTML of the operator that is clicked
     insertedOperator = event.target.innerHTML;
+    //if current screen or previous screen are empty it wil return nothing
+    if (previousScreen.innerHTML === '' || currentScreen.innerHTML === '') {
+        return;
+    }
     //If the text inside the HTML operator is not equal to nothing then is will activate the function computeOperator
     if (insertedOperator !== "") {
     //if condition is true then it will activate the function computeOperator  
@@ -65,10 +69,6 @@ function inputOperator(event) {
 }
 
 function computeOperator () {
-    //if current screen or previous screen are empty it wil return nothing
-    if (previousScreen.innerHTML === '' || currentScreen.innerHTML === '') {
-        return;
-    }
     //let has been used to declare the variable operation to be different depending on the operator
     let operation = "";
     // if a operator has been input it will now identify which mathematically named string it is allocated to
