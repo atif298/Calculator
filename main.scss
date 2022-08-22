@@ -18,7 +18,7 @@
       "one two three div"
       "four five six addi"
       "seven eight nine subt"
-      "dots zeros . equals";
+      "dots zeros twodp equals";
 
     #screen {grid-area: screens;}
     #C { grid-area: C; }
@@ -39,6 +39,7 @@
     #nine { grid-area: nine; }
     #zeros { grid-area: zeros; }
     #dot { grid-area: dots; }
+    #twodp {grid-area: twodp;}
 
 
 
@@ -69,6 +70,15 @@
         background-color: $grey;
         cursor: pointer;
     }
+
+    &__2dp {
+        aspect-ratio: 1;
+        border-radius: 100%;
+        background-color: $green;
+        cursor: pointer;
+    }
+
+
     
 
     button {
@@ -86,7 +96,7 @@
         flex-direction: column;
         align-items: flex-end;
         justify-content: space-evenly;
-        border: 1px solid red;
+        // border: 1px solid red;
     }
 
     &__output-previous {
@@ -94,7 +104,7 @@
         font-size: 1rem;
         text-align: end;
         color: $green;
-        border: 1px solid green;
+        // border: 1px solid green;
     }
 
     &__output-current {
@@ -104,7 +114,7 @@
         font-size: 3rem;
         overflow-x: scroll;
         color: $white;
-        border: 1px solid yellow;
+        // border: 1px solid yellow;
 
     }
 
