@@ -61,7 +61,7 @@ function inputOperator(event) {
     if (insertedOperator !== "") {
     //if condition is true then it will activate the function computeOperator  
         computeOperator();
-     }    
+    }    
 }
 
 function computeOperator () {
@@ -129,10 +129,13 @@ function computeAnswer () {
         default:
             return;
     }
-    operation = ""
     //this will return the calculated result back as a string so that another operator can be used on it without causing an interferance as inputs are given as strings 
-    // return currentScreen.innerHTML = answer;
-    return currentScreen.innerHTML = (answer);
+    currentScreen.innerHTML = (answer);
+
+    //THIS WAS ADDED IN AS A SOLUTION TO OVERWRITE THE PREVIOUS OPERATOR WAS NOY FOUND
+    //INSTEAD FOR NOW WE ASK THE USER TO CLEAR ALL TO ALLOW TO USE A NEW OPERATOR
+    // - BY USING INDIVIDUAL ID'S FOR OPERATORS (SIMIILAR TO HOW I DID FOR EQUALS) I MAY BE ABLE TO SOLVE THISPROBLEM
+    return previousScreen.innerHTML = "PRESS C TO START NEW CALCULATION"
 }
 
 
