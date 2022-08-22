@@ -57,10 +57,6 @@ function inputOperator(event) {
     currentScreen.innerHTML = ("");
     //insertedOperator is the variable for the text that is inside the HTML of the operator that is clicked
     insertedOperator = event.target.innerHTML;
-    //if current screen or previous screen are empty it wil return nothing
-    if (previousScreen.innerHTML === '' || currentScreen.innerHTML === '') {
-        return;
-    }
     //If the text inside the HTML operator is not equal to nothing then is will activate the function computeOperator
     if (insertedOperator !== "") {
     //if condition is true then it will activate the function computeOperator  
