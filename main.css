@@ -10,7 +10,8 @@
 
 .calculator {
   padding: 5%;
-  min-height: 100vh;
+  min-height: min-content;
+  min-width: min-content;
   display: grid;
   justify-content: center;
   align-items: center;
