@@ -40,9 +40,6 @@ function inputNumber(event) {
     //will return the HTML text from inserted number into the HTML text of currentScreen
     //currentScreen.innerHTML was declared first as the new number will go after the previous one
     return currentScreen.innerHTML += insertedNumber;
-    
-    //
-
 }
 
 
