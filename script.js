@@ -38,7 +38,9 @@ function inputNumber(event) {
     //insertedNumber is a let variable (as each input button will be a different insertedNumber next to another insertedNumber) for the text that is inside the HTML for the number clicked
     let insertedNumber = event.target.innerHTML;
     // if the input number is . and current screen also displays . it will return meaning the . button will no longer be functional after thefirst .
-    if (insertedNumber === '.' && currentScreen.innerHTML.includes('.')) return;
+    if (insertedNumber === '.' && currentScreen.innerHTML.includes('.')) {
+        return;
+    }
     //will return the HTML text from inserted number into the HTML text of currentScreen
     //currentScreen.innerHTML was declared first as the new number will go after the previous one
     return currentScreen.innerHTML += insertedNumber;
