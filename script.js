@@ -21,8 +21,8 @@ const previousScreen = document.querySelector(".calculator__output-previous")
 //Current output
 const currentScreen = document.querySelector(".calculator__output-current")
 
-let insertedOperator = "";
-let operation = "";
+//Round to 2 decimal places
+const twoDP = document.querySelector(".calculator__2dp")
 
 
 
@@ -168,8 +168,16 @@ function backspace() {
 }
 
 
-//2DP
+//implementing click trigger for when 2DP has been clicked to run the function twodp
+twoDP.addEventListener('click', twoDecPoint);
 
-// function twoDP(){
-//     if (currentScreen.innerHTML )
-// }
+//2DP
+function twoDecPoint() { 
+    //making the type of currentScreen HTML equal to a variableand then equal to a number so we can calculate 2DP
+    let x = Number(currentScreen.innerHTML);
+    //rounded variable will hold this calculation
+    //Math.round, rounds to nearest integer, epsilon used for acurate number, divided by 100 for 2dp
+    rounded = Math.round((x + Number.EPSILON) * 100) / 100;
+    //return this value into the current screen
+    return currentScreen.innerHTML = rounded;
+}
