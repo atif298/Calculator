@@ -65,6 +65,10 @@ function inputOperator(event) {
 }
 
 function computeOperator () {
+    //if current screen or previous screen are empty it wil return nothing
+    if (previousScreen.innerHTML === '' || currentScreen.innerHTML === '') {
+        return;
+    }
     //let has been used to declare the variable operation to be different depending on the operator
     let operation = "";
     // if a operator has been input it will now identify which mathematically named string it is allocated to
@@ -129,6 +133,7 @@ function computeAnswer () {
         default:
             return;
     }
+    operation = ""
     //this will return the calculated result back as a string so that another operator can be used on it without causing an interferance as inputs are given as strings 
     // return currentScreen.innerHTML = answer;
     return currentScreen.innerHTML = (answer);
