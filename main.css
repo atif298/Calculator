@@ -18,7 +18,7 @@
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(6, 1fr);
   gap: 1rem 1rem;
-  grid-template-areas: "screens screens screens screens" "C . DEL mult" "one two three div" "four five six addi" "seven eight nine subt" "dots zeros twodp equals";
+  grid-template-areas: "screens screens screens screens" "C DEL . mult" "one two three div" "four five six addi" "seven eight nine subt" "dots zeros twodp equals";
 }
 .calculator #screen {
   grid-area: screens;
