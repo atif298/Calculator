@@ -140,10 +140,12 @@ function computeAnswer () {
 clear.addEventListener("click", allClear);
 
 function allClear () {
-    //this will remove any HTML textinside currentScreen
-    currentScreen.innerHTML = "";
-    //this will remove any HTML textinside previousScreen
-    previousScreen.innerHTML = "";
+    // //this will remove any HTML textinside currentScreen
+    // currentScreen.innerHTML = "";
+    // //this will remove any HTML textinside previousScreen
+    // previousScreen.innerHTML = "";
+    //this will refreshwhole page and true means it will also refresh without any stored cache
+    window.location.reload(true);
 }
 
 
@@ -160,3 +162,10 @@ function backspace() {
     //this will mean currentNumber string is now assigned and placed into the text in the HTML of currentScreen
     currentScreen.innerHTML = currentNumber;
 }
+
+
+//2DP
+
+// function twoDP(){
+//     if (currentScreen.innerHTML )
+// }
