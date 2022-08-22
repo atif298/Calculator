@@ -5,7 +5,7 @@
   font-family: Arial, Helvetica, sans-serif;
   font-size: 3vw;
   background-color: #343434;
-  color: white;
+  color: #FFFF;
 }
 
 .calculator {
@@ -17,7 +17,7 @@
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(6, 1fr);
   gap: 1rem 1rem;
-  grid-template-areas: "screens screens screens screens" "C . DEL mult" "one two three div" "four five six addi" "seven eight nine subt" "dots zeros . equals";
+  grid-template-areas: "screens screens screens screens" "C . DEL mult" "one two three div" "four five six addi" "seven eight nine subt" "dots zeros twodp equals";
 }
 .calculator #screen {
   grid-area: screens;
@@ -76,6 +76,9 @@
 .calculator #dot {
   grid-area: dots;
 }
+.calculator #twodp {
+  grid-area: twodp;
+}
 .calculator__number {
   aspect-ratio: 1;
   border-radius: 100%;
@@ -100,6 +103,12 @@
   background-color: #7c7c7c;
   cursor: pointer;
 }
+.calculator__2dp {
+  aspect-ratio: 1;
+  border-radius: 100%;
+  background-color: #00a560;
+  cursor: pointer;
+}
 .calculator button {
   font-size: 1rem;
 }
@@ -113,14 +122,12 @@
   flex-direction: column;
   align-items: flex-end;
   justify-content: space-evenly;
-  border: 1px solid red;
 }
 .calculator__output-previous {
   height: 30%;
   font-size: 1rem;
   text-align: end;
   color: #00a560;
-  border: 1px solid green;
 }
 .calculator__output-current {
   height: 70%;
@@ -128,6 +135,5 @@
   text-align: end;
   font-size: 3rem;
   overflow-x: scroll;
-  color: white;
-  border: 1px solid yellow;
+  color: #FFFF;
 }
