@@ -38,8 +38,8 @@ function inputNumber(event) {
     //insertedNumber is a let variable (as each input button will be a different insertedNumber next to another insertedNumber) for the text that is inside the HTML for the number clicked
     let insertedNumber = event.target.innerHTML;
     //will return the HTML text from inserted number into the HTML text of currentScreen
+    //currentScreen.innerHTML was declared first as the new number will go after the previous one
     return currentScreen.innerHTML += insertedNumber;
-    //currentScreen.innerHTML was declared first as the new number will go after the previous one 
 }
 
 
@@ -60,7 +60,7 @@ function inputOperator(event) {
     //If the text inside the HTML operator is not equal to nothing then is will activate the function computeOperator
     if (insertedOperator !== "") {
     //if condition is true then it will activate the function computeOperator  
-        computeOperator();
+        return computeOperator();
     }    
 }
 
@@ -167,11 +167,10 @@ function backspace() {
     currentScreen.innerHTML = currentNumber;
 }
 
-
+//2DP
 //implementing click trigger for when 2DP has been clicked to run the function twodp
 twoDP.addEventListener('click', twoDecPoint);
 
-//2DP
 function twoDecPoint() { 
     //making the type of currentScreen HTML equal to a variableand then equal to a number so we can calculate 2DP
     let x = Number(currentScreen.innerHTML);
