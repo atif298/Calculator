@@ -13,6 +13,8 @@
     grid-template-rows: repeat(6, 1fr);
     gap: 1rem 1rem;
 
+
+
     grid-template-areas:
       "screens screens screens screens"
       "C DEL . mult"
@@ -123,3 +125,7 @@
 
 }
 
+@media screen and (min-width: 530px) {
+
+
+}
